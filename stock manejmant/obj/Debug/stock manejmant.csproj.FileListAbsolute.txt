@@ -1,0 +1,35 @@
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\bin\Debug\stock manejmant.exe.config
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\bin\Debug\stock manejmant.exe
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\bin\Debug\stock manejmant.pdb
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.Properties.Resources.resources
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.exe
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.pdb
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.Form2.resources
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.home.resources
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.frm_log.resources
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.frm_manage.resources
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.cetegorys.resources
+C:\Users\asus\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.suppliers.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\bin\Debug\stock manejmant.exe.config
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\bin\Debug\stock manejmant.exe
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\bin\Debug\stock manejmant.pdb
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.frm_log.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.frm_manage.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.Properties.Resources.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.suppliers.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.exe
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock manejmant.pdb
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.AddUser.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.AdminHome.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.categories.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.IssuedItemReport.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.IssueProduct.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.RemaningStock.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.StaffHome.resources
+C:\Users\DELL\source\repos\stock manejmant\stock manejmant\obj\Debug\stock_manejmant.StoKeeperHome.resources
