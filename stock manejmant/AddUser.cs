@@ -33,7 +33,9 @@ namespace stock_manejmant
                 MessageBox.Show("User Added Successfully");
                 con.Close();
                 populate();
-
+                tb_Uname.Clear();
+                tb_Password.Clear();
+                comboBox_role.SelectedItem = null;
             }
             catch (Exception ex)
             {
@@ -55,7 +57,9 @@ namespace stock_manejmant
 
         private void dgv_Ceregories_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            tb_Uname.Text = dgv_users.SelectedRows[0].Cells[0].Value.ToString();
+            tb_Password.Text = dgv_users.SelectedRows[0].Cells[1].Value.ToString();
+            comboBox_role.Text = dgv_users.SelectedRows[0].Cells[2].Value.ToString();
         }
 
         private void btnc_back_Click(object sender, EventArgs e)
@@ -63,6 +67,11 @@ namespace stock_manejmant
             this.Close();
             AdminHome log = new AdminHome();
             log.Show();
+        }
+
+        private void AddUser_Load(object sender, EventArgs e)
+        {
+            populate();
         }
     }
 }
