@@ -58,6 +58,7 @@
             this.dgv_RemaningStock.RowTemplate.Height = 25;
             this.dgv_RemaningStock.Size = new System.Drawing.Size(942, 483);
             this.dgv_RemaningStock.TabIndex = 64;
+            this.dgv_RemaningStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_RemaningStock_CellContentClick);
             // 
             // label6
             // 

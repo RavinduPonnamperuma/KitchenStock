@@ -108,39 +108,7 @@ namespace stock_manejmant
             }
 
 
-            // tb_id.Text = dgv_Stocks.SelectedRows[0].Cells[0].Value.ToString();
-            //  tb_name.Text = dgv_Stocks.SelectedRows[0].Cells[1].Value.ToString();
-            //  tb_price.Text = dgv_Stocks.SelectedRows[0].Cells[2].Value.ToString();
-            //  tb_quntity.Text = dgv_Stocks.SelectedRows[0].Cells[3].Value.ToString();
-            //  comboBox1.SelectedValue = dgv_Stocks.SelectedRows[0].Cells[4].Value.ToString();
-
-        }
-
-        private void btn_edit_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (tb_id.Text == "" || tb_name.Text == "" || tb_price.Text == "" || tb_quntity.Text == "" )
-                {
-                    MessageBox.Show("Missing Information");
-                }
-                else
-                {
-                    con.Open();
-                    string query = "update product set prodName='" + tb_name.Text + "',prodQut='" + tb_quntity.Text +"'prodCat'"+comboBox1.Text+"'prodPrice'"+tb_price.Text+ "'where prodID" + tb_id.Text + "";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product Successfully Updadted");
-                    con.Close();
-                    populate();
-                }
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
