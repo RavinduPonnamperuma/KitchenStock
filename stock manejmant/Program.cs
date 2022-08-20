@@ -17,7 +17,7 @@ namespace stock_manejmant
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            Application.Run(new frm_log());
-         // Application.Run(new frm_manage());
+         
         }
     }
 }
