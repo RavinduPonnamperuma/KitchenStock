@@ -63,6 +63,7 @@
             this.dgv_Ceregories.Location = new System.Drawing.Point(489, 100);
             this.dgv_Ceregories.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_Ceregories.Name = "dgv_Ceregories";
+            this.dgv_Ceregories.RowHeadersWidth = 51;
             this.dgv_Ceregories.RowTemplate.Height = 25;
             this.dgv_Ceregories.Size = new System.Drawing.Size(644, 506);
             this.dgv_Ceregories.TabIndex = 49;
@@ -194,6 +195,7 @@
             this.Name = "IssueProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IssueProduct";
+            this.Load += new System.EventHandler(this.IssueProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ceregories)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

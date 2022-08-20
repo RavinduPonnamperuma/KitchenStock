@@ -23,5 +23,10 @@ namespace stock_manejmant
             StoKeeperHome log = new StoKeeperHome();
             log.Show();
         }
+
+        private void IssueProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

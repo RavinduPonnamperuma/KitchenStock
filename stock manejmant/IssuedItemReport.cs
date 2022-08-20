@@ -28,5 +28,10 @@ namespace stock_manejmant
             StaffHome log = new StaffHome();
             log.Show();
         }
+
+        private void IssuedItemReport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

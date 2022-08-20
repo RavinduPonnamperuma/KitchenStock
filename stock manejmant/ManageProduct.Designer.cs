@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,13 +40,18 @@
             this.tb_price = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_add = new System.Windows.Forms.Button();
-            this.btn_edit = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.dgv_Stocks = new System.Windows.Forms.DataGridView();
-            this.btn_refresh = new System.Windows.Forms.Button();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.categoryTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kitchenStockDB_08182022DataSet = new stock_manejmant.KitchenStockDB_08182022DataSet();
             this.button1 = new System.Windows.Forms.Button();
+            this.categoryTblTableAdapter = new stock_manejmant.KitchenStockDB_08182022DataSetTableAdapters.categoryTblTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Stocks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryTblBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB_08182022DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -111,7 +117,7 @@
             // tb_id
             // 
             this.tb_id.Location = new System.Drawing.Point(183, 107);
-            this.tb_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_id.Margin = new System.Windows.Forms.Padding(4);
             this.tb_id.Name = "tb_id";
             this.tb_id.Size = new System.Drawing.Size(200, 22);
             this.tb_id.TabIndex = 1;
@@ -119,7 +125,7 @@
             // tb_name
             // 
             this.tb_name.Location = new System.Drawing.Point(183, 164);
-            this.tb_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_name.Margin = new System.Windows.Forms.Padding(4);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(200, 22);
             this.tb_name.TabIndex = 1;
@@ -127,7 +133,7 @@
             // tb_quntity
             // 
             this.tb_quntity.Location = new System.Drawing.Point(183, 218);
-            this.tb_quntity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_quntity.Margin = new System.Windows.Forms.Padding(4);
             this.tb_quntity.Name = "tb_quntity";
             this.tb_quntity.Size = new System.Drawing.Size(200, 22);
             this.tb_quntity.TabIndex = 1;
@@ -135,7 +141,7 @@
             // tb_price
             // 
             this.tb_price.Location = new System.Drawing.Point(183, 268);
-            this.tb_price.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_price.Margin = new System.Windows.Forms.Padding(4);
             this.tb_price.Name = "tb_price";
             this.tb_price.Size = new System.Drawing.Size(200, 22);
             this.tb_price.TabIndex = 1;
@@ -158,7 +164,7 @@
             this.btn_add.BackColor = System.Drawing.Color.Tomato;
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.Location = new System.Drawing.Point(21, 411);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(108, 54);
             this.btn_add.TabIndex = 4;
@@ -166,29 +172,16 @@
             this.btn_add.UseVisualStyleBackColor = false;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // btn_edit
-            // 
-            this.btn_edit.BackColor = System.Drawing.Color.Tomato;
-            this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.Location = new System.Drawing.Point(149, 411);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(108, 54);
-            this.btn_edit.TabIndex = 4;
-            this.btn_edit.Text = "EDIT";
-            this.btn_edit.UseVisualStyleBackColor = false;
-            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
-            // 
             // btn_delete
             // 
             this.btn_delete.BackColor = System.Drawing.Color.Tomato;
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.Location = new System.Drawing.Point(276, 411);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(108, 54);
             this.btn_delete.TabIndex = 4;
-            this.btn_delete.Text = "DELETE";
+            this.btn_delete.Text = "Clear";
             this.btn_delete.UseVisualStyleBackColor = false;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
@@ -196,53 +189,77 @@
             // 
             this.dgv_Stocks.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Stocks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Stocks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Edit,
+            this.Delete});
             this.dgv_Stocks.Location = new System.Drawing.Point(437, 130);
-            this.dgv_Stocks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_Stocks.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_Stocks.Name = "dgv_Stocks";
+            this.dgv_Stocks.RowHeadersWidth = 51;
             this.dgv_Stocks.Size = new System.Drawing.Size(644, 482);
             this.dgv_Stocks.TabIndex = 5;
             this.dgv_Stocks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Stocks_CellContentClick);
             // 
-            // btn_refresh
+            // Edit
             // 
-            this.btn_refresh.BackColor = System.Drawing.Color.Tomato;
-            this.btn_refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refresh.Location = new System.Drawing.Point(959, 65);
-            this.btn_refresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(123, 54);
-            this.btn_refresh.TabIndex = 4;
-            this.btn_refresh.Text = "Refresh";
-            this.btn_refresh.UseVisualStyleBackColor = false;
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Edit.HeaderText = "Edit";
+            this.Edit.MinimumWidth = 6;
+            this.Edit.Name = "Edit";
+            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Edit.Width = 61;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Width = 78;
             // 
             // comboBox1
             // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoryTblBindingSource, "Cat_Name", true));
+            this.comboBox1.DataSource = this.categoryTblBindingSource;
+            this.comboBox1.DisplayMember = "Cat_Name";
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Beverage",
-            "Meat",
-            "Produse",
-            "Fish"});
             this.comboBox1.Location = new System.Drawing.Point(183, 326);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 28);
             this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Select Cetegory";
+            this.comboBox1.ValueMember = "Cat_Name";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // categoryTblBindingSource
+            // 
+            this.categoryTblBindingSource.DataMember = "categoryTbl";
+            this.categoryTblBindingSource.DataSource = this.kitchenStockDB_08182022DataSet;
+            // 
+            // kitchenStockDB_08182022DataSet
+            // 
+            this.kitchenStockDB_08182022DataSet.DataSetName = "KitchenStockDB_08182022DataSet";
+            this.kitchenStockDB_08182022DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(21, 554);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 59);
             this.button1.TabIndex = 6;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // categoryTblTableAdapter
+            // 
+            this.categoryTblTableAdapter.ClearBeforeFill = true;
             // 
             // frm_manage
             // 
@@ -253,8 +270,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_Stocks);
             this.Controls.Add(this.btn_delete);
-            this.Controls.Add(this.btn_edit);
-            this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox1);
@@ -268,13 +283,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frm_manage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MAnage_Stocks";
             this.Load += new System.EventHandler(this.frm_manage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Stocks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryTblBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB_08182022DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,11 +310,14 @@
         private System.Windows.Forms.TextBox tb_price;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.DataGridView dgv_Stocks;
-        private System.Windows.Forms.Button btn_refresh;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewButtonColumn Edit;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private KitchenStockDB_08182022DataSet kitchenStockDB_08182022DataSet;
+        private System.Windows.Forms.BindingSource categoryTblBindingSource;
+        private KitchenStockDB_08182022DataSetTableAdapters.categoryTblTableAdapter categoryTblTableAdapter;
     }
 }

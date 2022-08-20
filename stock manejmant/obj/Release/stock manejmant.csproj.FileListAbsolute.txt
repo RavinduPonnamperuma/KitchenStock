@@ -1,0 +1,23 @@
+D:\GIT\KitchenStock\stock manejmant\bin\Release\stock manejmant.exe.config
+D:\GIT\KitchenStock\stock manejmant\bin\Release\stock manejmant.exe
+D:\GIT\KitchenStock\stock manejmant\bin\Release\stock manejmant.pdb
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.AddUser.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.AdminHome.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.CateDel.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.categories.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.Delfrm.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.EditCate.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.Editfrm.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.frm_log.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.frm_manage.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.IssuedItemReport.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.IssueProduct.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.Properties.Resources.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.RemaningStock.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.StaffHome.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.StoKeeperHome.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock_manejmant.suppliers.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock manejmant.csproj.GenerateResource.cache
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock manejmant.csproj.CoreCompileInputs.cache
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock manejmant.exe
+D:\GIT\KitchenStock\stock manejmant\obj\Release\stock manejmant.pdb

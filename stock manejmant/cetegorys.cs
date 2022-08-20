@@ -18,7 +18,7 @@ namespace stock_manejmant
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=RATHU;Initial Catalog=kitchenStock;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-6B9TM0P;Initial Catalog=KitchenStockDB_08182022;Integrated Security=True");
        //add
         private void button1_Click(object sender, EventArgs e)
         {
@@ -35,6 +35,9 @@ namespace stock_manejmant
                 MessageBox.Show("Category Added Successfully");
                 con.Close();
                 populate();
+                tb_C_id.Clear();
+                tb_C_name.Clear();
+                tb_C_discription.Clear();
 
             }
             catch (Exception ex) 
@@ -62,16 +65,42 @@ namespace stock_manejmant
 
         private void dgv_Ceregories_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-    
-            tb_C_id.Text = dgv_Ceregories.SelectedRows[0].Cells[0].Value.ToString();
-            tb_C_name.Text = dgv_Ceregories.SelectedRows[0].Cells[1].Value.ToString();
-            tb_C_discription.Text = dgv_Ceregories.SelectedRows[0].Cells[2].Value.ToString();
+
+            string colName = dgv_Ceregories.Columns[e.ColumnIndex].Name;
+            if (colName=="edit")
+            {
+
+                EditCate ec = new EditCate();
+                ec.Show();
+                //Editfrm frm =new  Editfrm();
+                ec.tb_C_id1.Text = dgv_Ceregories.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
+                ec.tb_C_name1.Text = dgv_Ceregories.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
+                ec.tb_C_discription1.Text = dgv_Ceregories.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
+                this.Hide();
+            }
+            else if (colName=="Delete")
+            {
+                CateDel cdel = new CateDel();
+                cdel.Show();
+                cdel.lblname1.Text = dgv_Ceregories.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
+                cdel.lblpass1.Text = dgv_Ceregories.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
+                cdel.lblrole1.Text = dgv_Ceregories.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
+                this.Hide();
+            }
             
+        
+
+
+
         }
         //delete
         private void button3_Click(object sender, EventArgs e)
         {
-            try
+
+            tb_C_id.Clear();
+            tb_C_name.Clear();
+            tb_C_discription.Clear();
+           /* try
             {
                 if (tb_C_id.Text=="")
                 {
@@ -92,7 +121,7 @@ namespace stock_manejmant
             {
 
                 MessageBox.Show(ex.Message);
-            }
+            }*/
         }
         //edit 
         private void button2_Click(object sender, EventArgs e)
@@ -127,6 +156,11 @@ namespace stock_manejmant
             this.Close();
             StoKeeperHome log = new StoKeeperHome();
             log.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

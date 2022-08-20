@@ -17,7 +17,7 @@ namespace stock_manejmant
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=RATHU;Initial Catalog=kitchenStock;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-6B9TM0P;Initial Catalog=KitchenStockDB_08182022;Integrated Security=True");
 
         private void btn_S_add_Click(object sender, EventArgs e)
         {
@@ -32,6 +32,11 @@ namespace stock_manejmant
                 MessageBox.Show("supplier Added Successfully");
                 con.Close();
                 populate();
+                tb_S_id.Clear();
+                tb_S_name.Clear();
+                tb_S_age.Clear();
+                tb_S_password.Clear();
+                tb_S_phone.Clear();
 
             }
             catch (Exception ex)
@@ -59,37 +64,45 @@ namespace stock_manejmant
 
         private void dgv_Suppliers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            tb_S_id.Text = dgv_Suppliers.SelectedRows[0].Cells[0].Value.ToString();
-            tb_S_name.Text = dgv_Suppliers.SelectedRows[0].Cells[1].Value.ToString();
-            tb_S_age.Text = dgv_Suppliers.SelectedRows[0].Cells[2].Value.ToString();
-            tb_S_phone.Text = dgv_Suppliers.SelectedRows[0].Cells[3].Value.ToString();
-            tb_S_password.Text = dgv_Suppliers.SelectedRows[0].Cells[4].Value.ToString();
+            string colName = dgv_Suppliers.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit")
+            {
+
+                supedit se = new supedit();
+                se.Show();
+                //Editfrm frm =new  Editfrm();
+                se.tb_S_id1.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
+                se.tb_S_name1.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
+                se.tb_S_age1.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
+                se.tb_S_phone1.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[5].Value.ToString();
+                se.tb_S_password1.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[6].Value.ToString();
+
+
+
+                this.Hide();
+            }
+            else if (colName=="Delete")
+            {
+                supdel sd = new supdel();
+                sd.Show();
+                sd.lbl1.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
+                sd.lbl2.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
+                sd.lbl3.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
+                sd.lbl4.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[5].Value.ToString();
+                sd.lbl5.Text = dgv_Suppliers.Rows[(int)e.RowIndex].Cells[6].Value.ToString();
+                this.Hide();
+            }
+
         }
 
         private void btn_S_delete_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (tb_S_id.Text == "")
-                {
-                    MessageBox.Show("Select The Supplier to Delete");
-                }
-                else
-                {
-                    con.Open();
-                    string query = "delete from supplierTbl where Cat_ID=" + tb_S_id.Text + "";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Suplier Deleted Successfully");
-                    con.Close();
-                    populate();
-                }
-            }
-            catch (Exception ex)
-            {
+            tb_S_id.Clear();
+            tb_S_name.Clear();
+            tb_S_age.Clear();
+            tb_S_password.Clear();
+            tb_S_phone.Clear();
 
-                MessageBox.Show(ex.Message);
-            }
         }
 
        

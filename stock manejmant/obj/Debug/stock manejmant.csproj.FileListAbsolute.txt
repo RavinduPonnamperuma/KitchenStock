@@ -53,3 +53,31 @@ C:\Users\DELL\source\repos\GIT\KitchenStock\stock manejmant\obj\Debug\stock mane
 C:\Users\DELL\source\repos\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.csproj.CoreCompileInputs.cache
 C:\Users\DELL\source\repos\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.exe
 C:\Users\DELL\source\repos\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.pdb
+D:\GIT\KitchenStock\stock manejmant\bin\Debug\stock manejmant.exe.config
+D:\GIT\KitchenStock\stock manejmant\bin\Debug\stock manejmant.exe
+D:\GIT\KitchenStock\stock manejmant\bin\Debug\stock manejmant.pdb
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.csproj.AssemblyReference.cache
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.AddUser.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.AdminHome.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.categories.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.frm_log.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.frm_manage.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.IssuedItemReport.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.IssueProduct.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.Properties.Resources.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.RemaningStock.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.StaffHome.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.StoKeeperHome.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.suppliers.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.csproj.GenerateResource.cache
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.csproj.CoreCompileInputs.cache
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.exe
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock manejmant.pdb
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.Editfrm.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.Delfrm.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.EditCate.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.CateDel.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.proedit.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.prodel.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.supedit.resources
+D:\GIT\KitchenStock\stock manejmant\obj\Debug\stock_manejmant.supdel.resources

@@ -54,6 +54,7 @@
             this.dgv_RemaningStock.Location = new System.Drawing.Point(10, 62);
             this.dgv_RemaningStock.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_RemaningStock.Name = "dgv_RemaningStock";
+            this.dgv_RemaningStock.RowHeadersWidth = 51;
             this.dgv_RemaningStock.RowTemplate.Height = 25;
             this.dgv_RemaningStock.Size = new System.Drawing.Size(942, 483);
             this.dgv_RemaningStock.TabIndex = 64;
@@ -83,6 +84,7 @@
             this.Name = "RemaningStock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RemaningStock";
+            this.Load += new System.EventHandler(this.RemaningStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_RemaningStock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

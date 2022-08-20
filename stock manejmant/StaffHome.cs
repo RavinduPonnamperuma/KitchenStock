@@ -39,5 +39,10 @@ namespace stock_manejmant
             frm_log log = new frm_log();
             log.Show();
         }
+
+        private void StaffHome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

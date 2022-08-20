@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnc_back = new System.Windows.Forms.Button();
             this.dgv_users = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_Password = new System.Windows.Forms.TextBox();
-            this.tb_Uname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_role = new System.Windows.Forms.Label();
             this.comboBox_role = new System.Windows.Forms.ComboBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_users)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,29 +60,22 @@
             // 
             // dgv_users
             // 
+            this.dgv_users.AllowUserToAddRows = false;
             this.dgv_users.BackgroundColor = System.Drawing.Color.White;
             this.dgv_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_users.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.edit,
+            this.delete});
             this.dgv_users.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgv_users.Location = new System.Drawing.Point(411, 74);
             this.dgv_users.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_users.Name = "dgv_users";
+            this.dgv_users.RowHeadersWidth = 51;
             this.dgv_users.RowTemplate.Height = 25;
             this.dgv_users.Size = new System.Drawing.Size(644, 506);
             this.dgv_users.TabIndex = 49;
             this.dgv_users.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Ceregories_CellContentClick);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(239, 328);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 54);
-            this.button3.TabIndex = 48;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.dgv_users.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_users_MouseClick);
             // 
             // button2
             // 
@@ -91,8 +87,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 54);
             this.button2.TabIndex = 47;
-            this.button2.Text = "EDIT";
+            this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -127,14 +124,6 @@
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.Size = new System.Drawing.Size(200, 22);
             this.tb_Password.TabIndex = 44;
-            // 
-            // tb_Uname
-            // 
-            this.tb_Uname.Location = new System.Drawing.Point(169, 157);
-            this.tb_Uname.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_Uname.Name = "tb_Uname";
-            this.tb_Uname.Size = new System.Drawing.Size(200, 22);
-            this.tb_Uname.TabIndex = 43;
             // 
             // label3
             // 
@@ -177,12 +166,48 @@
             this.comboBox_role.FormattingEnabled = true;
             this.comboBox_role.Items.AddRange(new object[] {
             "ADMIN",
-            "STORE KEEPER",
-            "KITCHEN STAFF"});
+            "STORE_KEEPER",
+            "KITCHEN_STAFF"});
             this.comboBox_role.Location = new System.Drawing.Point(160, 270);
             this.comboBox_role.Name = "comboBox_role";
             this.comboBox_role.Size = new System.Drawing.Size(200, 24);
             this.comboBox_role.TabIndex = 52;
+            // 
+            // txtusername
+            // 
+            this.txtusername.Location = new System.Drawing.Point(169, 157);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(200, 22);
+            this.txtusername.TabIndex = 53;
+            // 
+            // edit
+            // 
+            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Red;
+            this.edit.DefaultCellStyle = dataGridViewCellStyle5;
+            this.edit.HeaderText = "edit";
+            this.edit.MinimumWidth = 6;
+            this.edit.Name = "edit";
+            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.edit.Text = "edit";
+            this.edit.Width = 60;
+            // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.DefaultCellStyle = dataGridViewCellStyle6;
+            this.delete.HeaderText = "delete";
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.delete.Text = "delete";
+            this.delete.Width = 76;
             // 
             // AddUser
             // 
@@ -190,16 +215,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1068, 622);
+            this.Controls.Add(this.txtusername);
             this.Controls.Add(this.comboBox_role);
             this.Controls.Add(this.lbl_role);
             this.Controls.Add(this.btnc_back);
             this.Controls.Add(this.dgv_users);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_Password);
-            this.Controls.Add(this.tb_Uname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "AddUser";
@@ -215,16 +239,17 @@
         #endregion
 
         private System.Windows.Forms.Button btnc_back;
-        private System.Windows.Forms.DataGridView dgv_users;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_Password;
-        private System.Windows.Forms.TextBox tb_Uname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_role;
         private System.Windows.Forms.ComboBox comboBox_role;
+        public System.Windows.Forms.TextBox txtusername;
+        public System.Windows.Forms.DataGridView dgv_users;
+        private System.Windows.Forms.DataGridViewButtonColumn edit;
+        private System.Windows.Forms.DataGridViewButtonColumn delete;
     }
 }

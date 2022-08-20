@@ -54,6 +54,7 @@
             this.dgv_IssuedItems.Location = new System.Drawing.Point(13, 77);
             this.dgv_IssuedItems.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_IssuedItems.Name = "dgv_IssuedItems";
+            this.dgv_IssuedItems.RowHeadersWidth = 51;
             this.dgv_IssuedItems.RowTemplate.Height = 25;
             this.dgv_IssuedItems.Size = new System.Drawing.Size(942, 483);
             this.dgv_IssuedItems.TabIndex = 61;
@@ -83,6 +84,7 @@
             this.Name = "IssuedItemReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IssuedItemReport";
+            this.Load += new System.EventHandler(this.IssuedItemReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_IssuedItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

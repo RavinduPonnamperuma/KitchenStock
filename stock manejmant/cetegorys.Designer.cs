@@ -30,7 +30,6 @@
         {
             this.dgv_Ceregories = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_C_discription = new System.Windows.Forms.TextBox();
@@ -40,6 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnc_back = new System.Windows.Forms.Button();
+            this.edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ceregories)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,10 +48,14 @@
             // 
             this.dgv_Ceregories.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Ceregories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Ceregories.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.edit,
+            this.Delete});
             this.dgv_Ceregories.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgv_Ceregories.Location = new System.Drawing.Point(437, 103);
-            this.dgv_Ceregories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_Ceregories.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_Ceregories.Name = "dgv_Ceregories";
+            this.dgv_Ceregories.RowHeadersWidth = 51;
             this.dgv_Ceregories.RowTemplate.Height = 25;
             this.dgv_Ceregories.Size = new System.Drawing.Size(644, 506);
             this.dgv_Ceregories.TabIndex = 37;
@@ -61,28 +66,14 @@
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(275, 292);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(215, 292);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(108, 54);
             this.button3.TabIndex = 36;
-            this.button3.Text = "DELETE";
+            this.button3.Text = "CLEAR";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(148, 292);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 54);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "EDIT";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -90,7 +81,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
             this.button1.Location = new System.Drawing.Point(20, 292);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 54);
             this.button1.TabIndex = 34;
@@ -109,11 +100,12 @@
             this.label6.Size = new System.Drawing.Size(404, 38);
             this.label6.TabIndex = 33;
             this.label6.Text = "MANAGE CATEGORIES";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // tb_C_discription
             // 
             this.tb_C_discription.Location = new System.Drawing.Point(183, 214);
-            this.tb_C_discription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_C_discription.Margin = new System.Windows.Forms.Padding(4);
             this.tb_C_discription.Name = "tb_C_discription";
             this.tb_C_discription.Size = new System.Drawing.Size(200, 22);
             this.tb_C_discription.TabIndex = 30;
@@ -121,7 +113,7 @@
             // tb_C_name
             // 
             this.tb_C_name.Location = new System.Drawing.Point(183, 160);
-            this.tb_C_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_C_name.Margin = new System.Windows.Forms.Padding(4);
             this.tb_C_name.Name = "tb_C_name";
             this.tb_C_name.Size = new System.Drawing.Size(200, 22);
             this.tb_C_name.TabIndex = 29;
@@ -129,7 +121,7 @@
             // tb_C_id
             // 
             this.tb_C_id.Location = new System.Drawing.Point(183, 103);
-            this.tb_C_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_C_id.Margin = new System.Windows.Forms.Padding(4);
             this.tb_C_id.Name = "tb_C_id";
             this.tb_C_id.Size = new System.Drawing.Size(200, 22);
             this.tb_C_id.TabIndex = 28;
@@ -174,13 +166,33 @@
             // 
             this.btnc_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnc_back.Location = new System.Drawing.Point(16, 551);
-            this.btnc_back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnc_back.Margin = new System.Windows.Forms.Padding(4);
             this.btnc_back.Name = "btnc_back";
             this.btnc_back.Size = new System.Drawing.Size(100, 58);
             this.btnc_back.TabIndex = 38;
             this.btnc_back.Text = "Back";
             this.btnc_back.UseVisualStyleBackColor = true;
             this.btnc_back.Click += new System.EventHandler(this.btnc_back_Click);
+            // 
+            // edit
+            // 
+            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.edit.HeaderText = "edit";
+            this.edit.MinimumWidth = 6;
+            this.edit.Name = "edit";
+            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.edit.Width = 60;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "delete";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Width = 76;
             // 
             // categories
             // 
@@ -191,7 +203,6 @@
             this.Controls.Add(this.btnc_back);
             this.Controls.Add(this.dgv_Ceregories);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_C_discription);
@@ -201,7 +212,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "categories";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cetegorys";
@@ -216,7 +227,6 @@
 
         private System.Windows.Forms.DataGridView dgv_Ceregories;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_C_discription;
@@ -226,5 +236,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnc_back;
+        private System.Windows.Forms.DataGridViewButtonColumn edit;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

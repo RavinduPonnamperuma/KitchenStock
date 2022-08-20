@@ -17,7 +17,7 @@ namespace stock_manejmant
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=RATHU;Initial Catalog=kitchenStock;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6B9TM0P;Initial Catalog=KitchenStockDB_08182022;Integrated Security=True");
         
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -36,9 +36,9 @@ namespace stock_manejmant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Do you want to EXIT..!!");
-             
-            this.Close();
+          //  MessageBox.Show("Do you want to EXIT..!!","Warning !",MessageBoxButtons.YesNo, (MessageBoxIcon)(DialogResult =DialogResult.Yes));
+            Application.Exit();
+            
 
         }
 
@@ -67,14 +67,14 @@ namespace stock_manejmant
                         AdminHome adminHome = new AdminHome();
                         adminHome.Show();
                     }
-                    else if (role == "STORE KEEPER")
+                    else if (role == "STORE_KEEPER")
                     {
                         //page that need to be load
                         this.Hide();
                         StoKeeperHome stoKeeperHome = new StoKeeperHome();
                         stoKeeperHome.Show();
                     }
-                    else if (role == "KITCHEN STAFF")
+                    else if (role == "KITCHEN_STAFF")
                     {
                         //page that need to be load
                         this.Hide();
