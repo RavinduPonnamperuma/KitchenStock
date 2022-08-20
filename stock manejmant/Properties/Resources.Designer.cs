@@ -19,7 +19,7 @@ namespace stock_manejmant.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -95,6 +95,36 @@ namespace stock_manejmant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_20px {
+            get {
+                object obj = ResourceManager.GetObject("cancel_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_20px1 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_20px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_30px {
+            get {
+                object obj = ResourceManager.GetObject("cancel_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kitchen_fresh_colorful_organic_vegetables_worktop_captured_above_top_view_flat_lay_grey_stone_as_background_layout_95107690 {
             get {
                 object obj = ResourceManager.GetObject("kitchen-fresh-colorful-organic-vegetables-worktop-captured-above-top-view-flat-la" +
@@ -117,6 +147,26 @@ namespace stock_manejmant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap services_20px {
+            get {
+                object obj = ResourceManager.GetObject("services_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap services_20px1 {
+            get {
+                object obj = ResourceManager.GetObject("services_20px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap set_indian_spices_wooden_table_top_view_big_horizontal_image_83830359 {
             get {
                 object obj = ResourceManager.GetObject("set-indian-spices-wooden-table-top-view-big-horizontal-image-83830359", resourceCulture);
@@ -130,6 +180,26 @@ namespace stock_manejmant.Properties {
         internal static System.Drawing.Bitmap set_indian_spices_wooden_table_top_view_big_horizontal_image_838303591 {
             get {
                 object obj = ResourceManager.GetObject("set-indian-spices-wooden-table-top-view-big-horizontal-image-838303591", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_30px {
+            get {
+                object obj = ResourceManager.GetObject("settings_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_30px1 {
+            get {
+                object obj = ResourceManager.GetObject("settings_30px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

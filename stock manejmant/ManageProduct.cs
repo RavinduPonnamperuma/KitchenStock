@@ -18,6 +18,7 @@ namespace stock_manejmant
         {
             InitializeComponent();
         }
+        //sql conncetion with sql addrsss
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-6B9TM0P;Initial Catalog=KitchenStockDB_08182022;Integrated Security=True");
 
         private void fillcombo()
@@ -36,6 +37,8 @@ namespace stock_manejmant
 
         private void btn_add_Click(object sender, EventArgs e)
         {
+
+            //addbutton
             try
             {
 
@@ -58,6 +61,7 @@ namespace stock_manejmant
                 MessageBox.Show(ex.Message);
             }
         }
+        //load data to the data grid viw
         private void populate()
         {
             con.Open();
@@ -69,13 +73,10 @@ namespace stock_manejmant
             dgv_Stocks.DataSource = ds.Tables[0];
             con.Close();
         }
-        /*private void cetegorys_Load(object sender, EventArgs e)
-        {
-           populate();
-        }
-        */
+        
         private void dgv_Stocks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Datagridview edit and delete button
 
             string colName = dgv_Stocks.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
@@ -113,6 +114,7 @@ namespace stock_manejmant
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+            //clear Button
             tb_id.Clear();
             tb_name.Clear();
             tb_price.Clear();
@@ -125,7 +127,7 @@ namespace stock_manejmant
         }
 
        
-
+        //back button
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

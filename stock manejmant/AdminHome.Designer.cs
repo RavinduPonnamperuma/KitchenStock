@@ -167,7 +167,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
+            this.MaximizeBox = false;
             this.Name = "AdminHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminHome";
             this.Load += new System.EventHandler(this.AdminHome_Load);
             this.panel2.ResumeLayout(false);

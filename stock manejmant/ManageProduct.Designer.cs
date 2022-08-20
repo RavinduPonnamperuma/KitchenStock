@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_manage));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,13 +44,13 @@
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.dgv_Stocks = new System.Windows.Forms.DataGridView();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.categoryTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kitchenStockDB_08182022DataSet = new stock_manejmant.KitchenStockDB_08182022DataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.categoryTblTableAdapter = new stock_manejmant.KitchenStockDB_08182022DataSetTableAdapters.categoryTblTableAdapter();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Stocks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryTblBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB_08182022DataSet)).BeginInit();
@@ -187,6 +189,7 @@
             // 
             // dgv_Stocks
             // 
+            this.dgv_Stocks.AllowUserToAddRows = false;
             this.dgv_Stocks.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Stocks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Stocks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -199,26 +202,6 @@
             this.dgv_Stocks.Size = new System.Drawing.Size(644, 482);
             this.dgv_Stocks.TabIndex = 5;
             this.dgv_Stocks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Stocks_CellContentClick);
-            // 
-            // Edit
-            // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Edit.HeaderText = "Edit";
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Edit.Width = 61;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "Delete";
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Delete.Width = 78;
             // 
             // comboBox1
             // 
@@ -260,6 +243,33 @@
             // categoryTblTableAdapter
             // 
             this.categoryTblTableAdapter.ClearBeforeFill = true;
+            // 
+            // Edit
+            // 
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle1.NullValue")));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Edit.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Edit.HeaderText = "Edit";
+            this.Edit.Image = global::stock_manejmant.Properties.Resources.services_20px;
+            this.Edit.MinimumWidth = 6;
+            this.Edit.Name = "Edit";
+            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Edit.Width = 61;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Image = global::stock_manejmant.Properties.Resources.cancel_20px;
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Width = 78;
             // 
             // frm_manage
             // 
@@ -314,10 +324,10 @@
         private System.Windows.Forms.DataGridView dgv_Stocks;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewButtonColumn Edit;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private KitchenStockDB_08182022DataSet kitchenStockDB_08182022DataSet;
         private System.Windows.Forms.BindingSource categoryTblBindingSource;
         private KitchenStockDB_08182022DataSetTableAdapters.categoryTblTableAdapter categoryTblTableAdapter;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
     }
 }

@@ -135,7 +135,7 @@ namespace stock_manejmant
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(66, 71);
+            this.label1.Location = new System.Drawing.Point(58, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 25);
@@ -147,7 +147,7 @@ namespace stock_manejmant
             this.btn_S_edit.BackColor = System.Drawing.Color.White;
             this.btn_S_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_S_edit.ForeColor = System.Drawing.Color.Red;
-            this.btn_S_edit.Location = new System.Drawing.Point(275, 342);
+            this.btn_S_edit.Location = new System.Drawing.Point(266, 341);
             this.btn_S_edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_S_edit.Name = "btn_S_edit";
             this.btn_S_edit.Size = new System.Drawing.Size(108, 54);
@@ -173,7 +173,9 @@ namespace stock_manejmant
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "supedit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "supedit";
             this.Load += new System.EventHandler(this.supedit_Load);
             this.ResumeLayout(false);

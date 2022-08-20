@@ -98,7 +98,9 @@ namespace stock_manejmant
             this.Controls.Add(this.lblrole);
             this.Controls.Add(this.lblpass);
             this.Controls.Add(this.lblname);
+            this.MaximizeBox = false;
             this.Name = "Delfrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delfrm";
             this.Load += new System.EventHandler(this.Delfrm_Load);
             this.ResumeLayout(false);

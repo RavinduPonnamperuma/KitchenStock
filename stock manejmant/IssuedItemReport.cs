@@ -17,6 +17,7 @@ namespace stock_manejmant
         {
             InitializeComponent();
         }
+        //sql conncection with sql address
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-6B9TM0P;Initial Catalog=KitchenStockDB_08182022;Integrated Security=True");
 
         private void label6_Click(object sender, EventArgs e)
@@ -26,6 +27,7 @@ namespace stock_manejmant
 
         private void btnIssued_back_Click(object sender, EventArgs e)
         {
+            //backbutton
             this.Close();
             StaffHome log = new StaffHome();
             log.Show();

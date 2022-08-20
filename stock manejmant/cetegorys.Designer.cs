@@ -39,13 +39,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnc_back = new System.Windows.Forms.Button();
-            this.edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ceregories)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_Ceregories
             // 
+            this.dgv_Ceregories.AllowUserToAddRows = false;
             this.dgv_Ceregories.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Ceregories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Ceregories.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -178,6 +179,7 @@
             // 
             this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.edit.HeaderText = "edit";
+            this.edit.Image = global::stock_manejmant.Properties.Resources.services_20px1;
             this.edit.MinimumWidth = 6;
             this.edit.Name = "edit";
             this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -188,6 +190,7 @@
             // 
             this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Delete.HeaderText = "delete";
+            this.Delete.Image = global::stock_manejmant.Properties.Resources.cancel_20px1;
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -236,7 +239,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnc_back;
-        private System.Windows.Forms.DataGridViewButtonColumn edit;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewImageColumn edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
     }
 }

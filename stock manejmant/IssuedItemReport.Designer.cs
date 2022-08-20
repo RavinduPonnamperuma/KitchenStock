@@ -82,6 +82,7 @@
             this.Controls.Add(this.btnIssued_back);
             this.Controls.Add(this.dgv_IssuedItems);
             this.Controls.Add(this.label6);
+            this.MaximizeBox = false;
             this.Name = "IssuedItemReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IssuedItemReport";

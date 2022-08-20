@@ -42,7 +42,7 @@ namespace stock_manejmant
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4.ForeColor = System.Drawing.Color.White;
-            this.lbl4.Location = new System.Drawing.Point(178, 213);
+            this.lbl4.Location = new System.Drawing.Point(156, 179);
             this.lbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(87, 25);
@@ -55,7 +55,7 @@ namespace stock_manejmant
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.ForeColor = System.Drawing.Color.White;
-            this.lbl5.Location = new System.Drawing.Point(178, 268);
+            this.lbl5.Location = new System.Drawing.Point(156, 234);
             this.lbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(138, 25);
@@ -67,7 +67,7 @@ namespace stock_manejmant
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.ForeColor = System.Drawing.Color.White;
-            this.lbl3.Location = new System.Drawing.Point(178, 162);
+            this.lbl3.Location = new System.Drawing.Point(156, 128);
             this.lbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(57, 25);
@@ -79,7 +79,7 @@ namespace stock_manejmant
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2.ForeColor = System.Drawing.Color.White;
-            this.lbl2.Location = new System.Drawing.Point(178, 108);
+            this.lbl2.Location = new System.Drawing.Point(156, 74);
             this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(74, 25);
@@ -91,7 +91,7 @@ namespace stock_manejmant
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.ForeColor = System.Drawing.Color.White;
-            this.lbl1.Location = new System.Drawing.Point(186, 51);
+            this.lbl1.Location = new System.Drawing.Point(156, 17);
             this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(33, 25);
@@ -102,7 +102,7 @@ namespace stock_manejmant
             // 
             this.btn_edit.BackColor = System.Drawing.Color.Tomato;
             this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.Location = new System.Drawing.Point(183, 339);
+            this.btn_edit.Location = new System.Drawing.Point(161, 296);
             this.btn_edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(108, 54);
@@ -116,14 +116,16 @@ namespace stock_manejmant
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(458, 450);
+            this.ClientSize = new System.Drawing.Size(427, 395);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.lbl4);
             this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
+            this.MaximizeBox = false;
             this.Name = "supdel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "supdel";
             this.ResumeLayout(false);
             this.PerformLayout();

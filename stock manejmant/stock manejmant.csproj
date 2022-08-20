@@ -311,5 +311,29 @@
   <ItemGroup>
     <None Include="Resources\set-indian-spices-wooden-table-top-view-big-horizontal-image-838303591.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="icn\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_20px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_20px1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

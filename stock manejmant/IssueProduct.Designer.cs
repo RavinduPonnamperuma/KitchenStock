@@ -83,7 +83,7 @@
             this.dgv_issue.Name = "dgv_issue";
             this.dgv_issue.RowHeadersWidth = 51;
             this.dgv_issue.RowTemplate.Height = 25;
-            this.dgv_issue.Size = new System.Drawing.Size(644, 506);
+            this.dgv_issue.Size = new System.Drawing.Size(698, 506);
             this.dgv_issue.TabIndex = 49;
             this.dgv_issue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_issue_CellContentClick);
             // 
@@ -92,7 +92,7 @@
             this.btn_issue.BackColor = System.Drawing.Color.White;
             this.btn_issue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_issue.ForeColor = System.Drawing.Color.Red;
-            this.btn_issue.Location = new System.Drawing.Point(31, 348);
+            this.btn_issue.Location = new System.Drawing.Point(68, 348);
             this.btn_issue.Margin = new System.Windows.Forms.Padding(4);
             this.btn_issue.Name = "btn_issue";
             this.btn_issue.Size = new System.Drawing.Size(193, 54);
@@ -247,7 +247,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(357, 344);
+            this.button1.Location = new System.Drawing.Point(348, 344);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 58);

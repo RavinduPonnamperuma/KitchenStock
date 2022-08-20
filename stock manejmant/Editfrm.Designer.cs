@@ -129,6 +129,7 @@ namespace stock_manejmant
             this.Controls.Add(this.tb_Password1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.MaximizeBox = false;
             this.Name = "Editfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editfrm";

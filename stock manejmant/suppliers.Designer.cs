@@ -43,20 +43,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tb_S_phone = new System.Windows.Forms.TextBox();
             this.btn_back = new System.Windows.Forms.Button();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Suppliers)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_Suppliers
             // 
+            this.dgv_Suppliers.AllowUserToAddRows = false;
             this.dgv_Suppliers.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Suppliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Suppliers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Edit,
             this.Delete});
             this.dgv_Suppliers.Location = new System.Drawing.Point(437, 91);
-            this.dgv_Suppliers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_Suppliers.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_Suppliers.Name = "dgv_Suppliers";
             this.dgv_Suppliers.RowHeadersWidth = 51;
             this.dgv_Suppliers.Size = new System.Drawing.Size(644, 518);
@@ -69,7 +70,7 @@
             this.btn_S_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_S_delete.ForeColor = System.Drawing.Color.Red;
             this.btn_S_delete.Location = new System.Drawing.Point(250, 407);
-            this.btn_S_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_S_delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_S_delete.Name = "btn_S_delete";
             this.btn_S_delete.Size = new System.Drawing.Size(108, 54);
             this.btn_S_delete.TabIndex = 21;
@@ -83,7 +84,7 @@
             this.btn_S_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_S_add.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btn_S_add.Location = new System.Drawing.Point(21, 407);
-            this.btn_S_add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_S_add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_S_add.Name = "btn_S_add";
             this.btn_S_add.Size = new System.Drawing.Size(108, 54);
             this.btn_S_add.TabIndex = 18;
@@ -106,7 +107,7 @@
             // tb_S_password
             // 
             this.tb_S_password.Location = new System.Drawing.Point(183, 322);
-            this.tb_S_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_S_password.Margin = new System.Windows.Forms.Padding(4);
             this.tb_S_password.Name = "tb_S_password";
             this.tb_S_password.Size = new System.Drawing.Size(200, 22);
             this.tb_S_password.TabIndex = 14;
@@ -114,7 +115,7 @@
             // tb_S_age
             // 
             this.tb_S_age.Location = new System.Drawing.Point(183, 214);
-            this.tb_S_age.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_S_age.Margin = new System.Windows.Forms.Padding(4);
             this.tb_S_age.Name = "tb_S_age";
             this.tb_S_age.Size = new System.Drawing.Size(200, 22);
             this.tb_S_age.TabIndex = 13;
@@ -122,7 +123,7 @@
             // tb_S_name
             // 
             this.tb_S_name.Location = new System.Drawing.Point(183, 160);
-            this.tb_S_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_S_name.Margin = new System.Windows.Forms.Padding(4);
             this.tb_S_name.Name = "tb_S_name";
             this.tb_S_name.Size = new System.Drawing.Size(200, 22);
             this.tb_S_name.TabIndex = 12;
@@ -130,7 +131,7 @@
             // tb_S_id
             // 
             this.tb_S_id.Location = new System.Drawing.Point(183, 103);
-            this.tb_S_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_S_id.Margin = new System.Windows.Forms.Padding(4);
             this.tb_S_id.Name = "tb_S_id";
             this.tb_S_id.Size = new System.Drawing.Size(200, 22);
             this.tb_S_id.TabIndex = 11;
@@ -140,7 +141,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 320);
+            this.label4.Location = new System.Drawing.Point(16, 320);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(166, 25);
@@ -176,7 +177,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 103);
+            this.label1.Location = new System.Drawing.Point(16, 103);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 25);
@@ -198,7 +199,7 @@
             // tb_S_phone
             // 
             this.tb_S_phone.Location = new System.Drawing.Point(183, 267);
-            this.tb_S_phone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_S_phone.Margin = new System.Windows.Forms.Padding(4);
             this.tb_S_phone.Name = "tb_S_phone";
             this.tb_S_phone.Size = new System.Drawing.Size(200, 22);
             this.tb_S_phone.TabIndex = 14;
@@ -208,7 +209,7 @@
             this.btn_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.ForeColor = System.Drawing.Color.Maroon;
             this.btn_back.Location = new System.Drawing.Point(29, 20);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(4);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(100, 60);
             this.btn_back.TabIndex = 23;
@@ -220,6 +221,7 @@
             // 
             this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Edit.HeaderText = "Edit";
+            this.Edit.Image = global::stock_manejmant.Properties.Resources.services_20px;
             this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
             this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -230,6 +232,7 @@
             // 
             this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Delete.HeaderText = "Delete";
+            this.Delete.Image = global::stock_manejmant.Properties.Resources.cancel_20px;
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -258,7 +261,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "suppliers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "suppliers";
@@ -286,7 +289,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_S_phone;
         private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.DataGridViewButtonColumn Edit;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
     }
 }

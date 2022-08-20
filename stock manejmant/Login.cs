@@ -42,6 +42,8 @@ namespace stock_manejmant
 
         }
 
+
+        //find the role
         private void btn_login_Click(object sender, EventArgs e)
         {
             string username,user_password;

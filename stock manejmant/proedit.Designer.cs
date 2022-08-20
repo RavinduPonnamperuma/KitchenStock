@@ -41,13 +41,13 @@ namespace stock_manejmant
             this.label1 = new System.Windows.Forms.Label();
             this.btn_edit = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.kitchenStockDB_08182022DataSet = new stock_manejmant.KitchenStockDB_08182022DataSet();
-            this.kitchenStockDB08182022DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kitchenStockDB08182022DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kitchenStockDB_08182022DataSet = new stock_manejmant.KitchenStockDB_08182022DataSet();
             this.categoryTblTableAdapter = new stock_manejmant.KitchenStockDB_08182022DataSetTableAdapters.categoryTblTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB_08182022DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB08182022DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryTblBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB08182022DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB_08182022DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_quntity1
@@ -124,7 +124,7 @@ namespace stock_manejmant
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(95, 118);
+            this.label2.Location = new System.Drawing.Point(86, 118);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 25);
@@ -136,7 +136,7 @@ namespace stock_manejmant
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 59);
+            this.label1.Location = new System.Drawing.Point(86, 59);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 25);
@@ -147,7 +147,7 @@ namespace stock_manejmant
             // 
             this.btn_edit.BackColor = System.Drawing.Color.Tomato;
             this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.Location = new System.Drawing.Point(323, 333);
+            this.btn_edit.Location = new System.Drawing.Point(354, 337);
             this.btn_edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(108, 54);
@@ -170,20 +170,20 @@ namespace stock_manejmant
             this.comboBox1.TabIndex = 14;
             this.comboBox1.ValueMember = "Cat_Name";
             // 
-            // kitchenStockDB_08182022DataSet
+            // categoryTblBindingSource
             // 
-            this.kitchenStockDB_08182022DataSet.DataSetName = "KitchenStockDB_08182022DataSet";
-            this.kitchenStockDB_08182022DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.categoryTblBindingSource.DataMember = "categoryTbl";
+            this.categoryTblBindingSource.DataSource = this.kitchenStockDB08182022DataSetBindingSource;
             // 
             // kitchenStockDB08182022DataSetBindingSource
             // 
             this.kitchenStockDB08182022DataSetBindingSource.DataSource = this.kitchenStockDB_08182022DataSet;
             this.kitchenStockDB08182022DataSetBindingSource.Position = 0;
             // 
-            // categoryTblBindingSource
+            // kitchenStockDB_08182022DataSet
             // 
-            this.categoryTblBindingSource.DataMember = "categoryTbl";
-            this.categoryTblBindingSource.DataSource = this.kitchenStockDB08182022DataSetBindingSource;
+            this.kitchenStockDB_08182022DataSet.DataSetName = "KitchenStockDB_08182022DataSet";
+            this.kitchenStockDB_08182022DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // categoryTblTableAdapter
             // 
@@ -194,7 +194,7 @@ namespace stock_manejmant
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(590, 429);
+            this.ClientSize = new System.Drawing.Size(547, 429);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.tb_quntity1);
@@ -207,11 +207,12 @@ namespace stock_manejmant
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "proedit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "proedit";
             this.Load += new System.EventHandler(this.proedit_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB_08182022DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB08182022DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryTblBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB08182022DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kitchenStockDB_08182022DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

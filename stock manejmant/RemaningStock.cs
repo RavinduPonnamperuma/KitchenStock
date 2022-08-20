@@ -17,9 +17,11 @@ namespace stock_manejmant
         {
             InitializeComponent();
         }
+
+        //sql conneection with sql address..
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-6B9TM0P;Initial Catalog=KitchenStockDB_08182022;Integrated Security=True");
 
-
+        //back button..
         private void btnRemaning_back_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -18,16 +18,20 @@ namespace stock_manejmant
             InitializeComponent();
         }
 
+        //sql connection and sql address
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-6B9TM0P;Initial Catalog=KitchenStockDB_08182022;Integrated Security=True");
 
+
+        //add button
         private void button1_Click(object sender, EventArgs e)
         {
+            
             try
             {
 
                 con.Open();
               
-               string query = "insert into Table_kitchen values(" + txtusername.Text + ",'" + tb_Password.Text + "','" + comboBox_role.Text + "')";
+               string query = "insert into Table_kitchen values('" + txtusername.Text + "','" + tb_Password.Text + "','" + comboBox_role.Text + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 cmd.ExecuteNonQuery();
@@ -44,6 +48,7 @@ namespace stock_manejmant
             }
         }
 
+
         private void populate()
         {
             con.Open();
@@ -56,46 +61,47 @@ namespace stock_manejmant
             con.Close();
         }
 
+        //datagride viw show
         private void dgv_Ceregories_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
 
 
             string colName = dgv_users.Columns[e.ColumnIndex].Name;
             if (colName=="edit")
             {
+
                 
                     Editfrm nw = new Editfrm();
                     nw.Show();
-                //Editfrm frm =new  Editfrm();
-              nw.txtusername1.Text = dgv_users.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
-               nw. tb_Password1.Text = dgv_users.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
-                nw.comboBox_role1.Text= dgv_users.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
 
-                //MessageBox.Show(dgv_users.Rows[(int)e.RowIndex].Cells[2].Value.ToString() + " " + dgv_users.Rows[(int)e.RowIndex].Cells[3].Value.ToString());
+                    nw.txtusername1.Text = dgv_users.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
+                    nw.tb_Password1.Text = dgv_users.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
+                    nw.comboBox_role1.Text = dgv_users.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
 
-
-                //con.Open();
-                // txtusername.Text = dgv_users.SelectedRows[0].Cells[1].Value.ToString();
-
-                //   tb_Password.Text = dgv_users[2, e.RowIndex].Value.ToString();
-                //comboBox_role.Text = dgv_users.Rows[e.RowIndex].Cells[3].Value.ToString();
-
-                this.Close();
+                    this.Close();
+                
+                
             }
             else if(colName=="delete")
             {
-                Delfrm del = new Delfrm();
-                del.Show();
-                del.lblname.Text = dgv_users.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
-                del.lblpass.Text = dgv_users.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
-                del.lblrole.Text = dgv_users.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
-                this.Close();
+                if (MessageBox.Show("Do you want Delete this User ?", "Add User", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes) ;
+                {
+                    Delfrm del = new Delfrm();
+                    del.Show();
+                    del.lblname.Text = dgv_users.Rows[(int)e.RowIndex].Cells[2].Value.ToString();
+                    del.lblpass.Text = dgv_users.Rows[(int)e.RowIndex].Cells[3].Value.ToString();
+                    del.lblrole.Text = dgv_users.Rows[(int)e.RowIndex].Cells[4].Value.ToString();
+                    this.Close();
+                }
+                
             }
 
 
 
         }
 
+        //back button
         private void btnc_back_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -108,6 +114,7 @@ namespace stock_manejmant
             populate();
         }
 
+        //clear button
         private void button2_Click(object sender, EventArgs e)
         {
             txtusername.Clear();

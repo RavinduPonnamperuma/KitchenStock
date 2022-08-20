@@ -40,7 +40,7 @@ namespace stock_manejmant
             this.btndel.BackColor = System.Drawing.Color.White;
             this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndel.ForeColor = System.Drawing.Color.Red;
-            this.btndel.Location = new System.Drawing.Point(144, 201);
+            this.btndel.Location = new System.Drawing.Point(130, 201);
             this.btndel.Margin = new System.Windows.Forms.Padding(4);
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(108, 54);
@@ -54,7 +54,7 @@ namespace stock_manejmant
             this.lblrole1.AutoSize = true;
             this.lblrole1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrole1.ForeColor = System.Drawing.Color.White;
-            this.lblrole1.Location = new System.Drawing.Point(122, 140);
+            this.lblrole1.Location = new System.Drawing.Point(108, 140);
             this.lblrole1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblrole1.Name = "lblrole1";
             this.lblrole1.Size = new System.Drawing.Size(144, 25);
@@ -66,7 +66,7 @@ namespace stock_manejmant
             this.lblpass1.AutoSize = true;
             this.lblpass1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpass1.ForeColor = System.Drawing.Color.White;
-            this.lblpass1.Location = new System.Drawing.Point(122, 90);
+            this.lblpass1.Location = new System.Drawing.Point(108, 90);
             this.lblpass1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblpass1.Name = "lblpass1";
             this.lblpass1.Size = new System.Drawing.Size(144, 25);
@@ -78,7 +78,7 @@ namespace stock_manejmant
             this.lblname1.AutoSize = true;
             this.lblname1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblname1.ForeColor = System.Drawing.Color.White;
-            this.lblname1.Location = new System.Drawing.Point(122, 43);
+            this.lblname1.Location = new System.Drawing.Point(108, 43);
             this.lblname1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblname1.Name = "lblname1";
             this.lblname1.Size = new System.Drawing.Size(144, 25);
@@ -95,7 +95,9 @@ namespace stock_manejmant
             this.Controls.Add(this.lblrole1);
             this.Controls.Add(this.lblpass1);
             this.Controls.Add(this.lblname1);
+            this.MaximizeBox = false;
             this.Name = "CateDel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CateDel";
             this.Load += new System.EventHandler(this.CateDel_Load);
             this.ResumeLayout(false);

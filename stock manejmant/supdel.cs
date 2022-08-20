@@ -37,6 +37,7 @@ namespace stock_manejmant
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Supplier Deleted Succesfully");
+
                 // Debug.WriteLine(query);
                 con.Close();
                 this.Close();

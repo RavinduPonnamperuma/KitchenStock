@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUser));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnc_back = new System.Windows.Forms.Button();
             this.dgv_users = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
@@ -41,15 +42,15 @@
             this.lbl_role = new System.Windows.Forms.Label();
             this.comboBox_role = new System.Windows.Forms.ComboBox();
             this.txtusername = new System.Windows.Forms.TextBox();
-            this.edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_users)).BeginInit();
             this.SuspendLayout();
             // 
             // btnc_back
             // 
             this.btnc_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnc_back.Location = new System.Drawing.Point(2, 548);
+            this.btnc_back.Location = new System.Drawing.Point(28, 534);
             this.btnc_back.Margin = new System.Windows.Forms.Padding(4);
             this.btnc_back.Name = "btnc_back";
             this.btnc_back.Size = new System.Drawing.Size(100, 58);
@@ -67,7 +68,7 @@
             this.edit,
             this.delete});
             this.dgv_users.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgv_users.Location = new System.Drawing.Point(411, 74);
+            this.dgv_users.Location = new System.Drawing.Point(411, 59);
             this.dgv_users.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_users.Name = "dgv_users";
             this.dgv_users.RowHeadersWidth = 51;
@@ -82,7 +83,7 @@
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(123, 328);
+            this.button2.Location = new System.Drawing.Point(275, 328);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 54);
@@ -96,7 +97,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(7, 328);
+            this.button1.Location = new System.Drawing.Point(28, 328);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 54);
@@ -130,7 +131,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(2, 211);
+            this.label3.Location = new System.Drawing.Point(13, 211);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 25);
@@ -142,7 +143,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(2, 157);
+            this.label2.Location = new System.Drawing.Point(13, 157);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 25);
@@ -168,7 +169,7 @@
             "ADMIN",
             "STORE_KEEPER",
             "KITCHEN_STAFF"});
-            this.comboBox_role.Location = new System.Drawing.Point(160, 270);
+            this.comboBox_role.Location = new System.Drawing.Point(169, 270);
             this.comboBox_role.Name = "comboBox_role";
             this.comboBox_role.Size = new System.Drawing.Size(200, 24);
             this.comboBox_role.TabIndex = 52;
@@ -183,30 +184,32 @@
             // edit
             // 
             this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Red;
-            this.edit.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle1.NullValue")));
+            this.edit.DefaultCellStyle = dataGridViewCellStyle1;
             this.edit.HeaderText = "edit";
+            this.edit.Image = global::stock_manejmant.Properties.Resources.services_20px;
             this.edit.MinimumWidth = 6;
             this.edit.Name = "edit";
             this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.edit.Text = "edit";
             this.edit.Width = 60;
             // 
             // delete
             // 
             this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
+            this.delete.DefaultCellStyle = dataGridViewCellStyle2;
             this.delete.HeaderText = "delete";
+            this.delete.Image = global::stock_manejmant.Properties.Resources.cancel_20px;
             this.delete.MinimumWidth = 6;
             this.delete.Name = "delete";
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Text = "delete";
             this.delete.Width = 76;
             // 
             // AddUser
@@ -249,7 +252,7 @@
         private System.Windows.Forms.ComboBox comboBox_role;
         public System.Windows.Forms.TextBox txtusername;
         public System.Windows.Forms.DataGridView dgv_users;
-        private System.Windows.Forms.DataGridViewButtonColumn edit;
-        private System.Windows.Forms.DataGridViewButtonColumn delete;
+        private System.Windows.Forms.DataGridViewImageColumn edit;
+        private System.Windows.Forms.DataGridViewImageColumn delete;
     }
 }
