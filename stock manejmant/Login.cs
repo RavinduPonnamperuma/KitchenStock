@@ -71,14 +71,14 @@ namespace stock_manejmant
                     }
                     else if (role == "STORE_KEEPER")
                     {
-                        //page that need to be load
+                        
                         this.Hide();
                         StoKeeperHome stoKeeperHome = new StoKeeperHome();
                         stoKeeperHome.Show();
                     }
                     else if (role == "KITCHEN_STAFF")
                     {
-                        //page that need to be load
+                        
                         this.Hide();
                         StaffHome staffHome = new StaffHome();
                         staffHome.Show();
